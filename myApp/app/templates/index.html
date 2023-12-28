@@ -1,0 +1,7 @@
+<form action="{% url 'app' %}" mthod="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+
+  <input type="file" name="my_file">
+  <input type="submit" value="Enviar">
+  
+</form>
