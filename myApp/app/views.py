@@ -13,7 +13,7 @@ from .models import MyFile
 # def app(request):
 #     if request.method == "GET":
 #         return render(request, "index.html")
-#     elif request.methot == "POST":
+#     elif request.method == "POST":
 #         file = request.FILES.get("my_file")
 #         img = Image.open(file)
 #         img_resized = img.resize((200, 200))
@@ -25,6 +25,8 @@ from .models import MyFile
 
 #         return HttpResponse("Imagem salva com Sucesso!")
 
+
+# !!!!!!!  Method to save image at Model!   !!!!!
 
 def app(request):
     if request.method == "GET":
