@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend-container
+    build:
+      context: ./myApp
+      dockerfile: Dockerfile
+
+    image: backend-image
+
+    ports:
+      - "8000:8000"
+
+    stdin_open: true
+    tty: true
+
+    restart: on-failure
+    volumes:
+      - ./myApp:/app/backend
+
